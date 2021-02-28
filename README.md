@@ -18,7 +18,7 @@ Languages
 
 
 Concept
-- About 300 coop/internship vacancies in KSA were scraped from LinkedIn using this javascript scraper: . This data includes: name of position, city, company, link to the vacancy on LinkedIn, description and date posted.
+- About 300 coop/internship vacancies in KSA were scraped from LinkedIn*. This data includes: name of position, city, company, link to the vacancy on LinkedIn, description and date posted.
 - The data, in JSON format, was then uploaded to Watson Discovery's on-cloud corpus, and enriched with NLU analysis from a customized instance of Watson NLU, extracting key concepts and keywords such as required major, required skills set and location. The data was also run through Personality Analysis to obtain an idea about the needs and values represented in the coop/internship description. Both analysis will be later compared with the one done on the resumes. 
 - Student uploads their CV/resume and/or a cover letter to COOBOT, the letter is optional but including it will help Personality Insights give better analysis regarding student's personality, needs and values. 
 - The application extracts the text from said documents, then show it to the user for validation, as the process of extracting text (especially from PDF) is not optimal, and providing Watson with unsanitized data might pose a risk of obtaining inaccurate results/analysis. 
@@ -58,5 +58,12 @@ To run the application, kindly follow the steps to host the application on Micro
 
 13- Finally, run the app by selecting "coobot" and choosing "Browse *:80 (HTTP) fomr the right side pane, or just type "localhost:/coobot/" as URL in your browser. (preferrably Chrome, but certainly not IE as the application uses modern javascript that does not run properly on IE)
 
+
+
+RESOURCES
+
+1. * Javascript scraper used: : https://github.com/spinlud/linkedin-jobs-scraper![image](https://user-images.githubusercontent.com/46668566/109413437-6fb7dd80-79be-11eb-8060-fc36b857a216.png)
+2. The training dataset (student resumes) was obtained from: https://www.kaggle.com/maitrip/resumes
+![image](https://user-images.githubusercontent.com/46668566/109413451-8b22e880-79be-11eb-860b-011c030d1c59.png)
 
 
