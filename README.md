@@ -35,7 +35,7 @@ Languages
 
 **NOTE**
 
-Please consider, this is just the source code and very backbone of the application which must be hosted locally on Miscrosoft IIS in order to run, minus of course sensitive credentials such as Watson services' API keys. If you would like to run and try it for yourself, first create your own instances of the aformentioned Watson services and plug your own API keys into . Then go through the following steps: 
+Please consider, this is just the source code and very backbone of the application which must be hosted locally on Miscrosoft IIS in order to run, minus of course sensitive credentials such as Watson services' API keys. If you would like to run and try it for yourself, first create your own instances of the aformentioned Watson services and plug your own API keys into "appsettings.json". Then go through the following steps: 
 
 To run the application, kindly follow the steps to host the application on Microsoft IIS (Internet Information Services): 
 
