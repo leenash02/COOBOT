@@ -1,7 +1,7 @@
 # COOBOT
 An ASP.NET web application which recommends students suitable Coop vacancies from LinkedIn based on analysis done on their resumes by IBM's AI Watson.
 
-**OVERVIEW
+**OVERVIEW**
 
 COOBOT is a senior project developed by two software engineering students from KSA. Please note that this is just a DEMO/proof of concept. It is NOT meant to be used or relied on by actual students looking for coop/internship opportunities. However, it is a first step towards a final and fully reliable solution.   
 
@@ -17,7 +17,7 @@ Languages
 - Typescript
 
 
-**CONCEPT
+**CONCEPT*
 
 - About 200 student resumes served as dataset** to train a custom Watson NLU model to extract location, major, and highlight/infer interpersonal and technical skills.
 - About 300 coop/internship vacancies in KSA were scraped from LinkedIn***. This data includes: name of position, city, company, link to the vacancy on LinkedIn, description and date posted.
@@ -29,7 +29,7 @@ Languages
 - The returned response is then visualized in order of relevance, and students can see how much they match with each of the recommended opportunities via charts. 
 
 
-**NOTE
+**NOTE**
 
 Please consider, this is just the source code and very backbone of the application, which is hosted locally on our machines. If you would like to run and try it for yourself, you would have to go through the following steps: 
 
@@ -63,7 +63,7 @@ To run the application, kindly follow the steps to host the application on Micro
 
 
 
-**RESOURCES
+**RESOURCES**
 
 1. ** The training dataset (student resumes) was obtained from: https://www.kaggle.com/maitrip/resumes
 2. *** The Javascript scraper used: : https://github.com/spinlud/linkedin-jobs-scraper
