@@ -5,9 +5,12 @@ An ASP.NET web application which recommends students suitable Coop vacancies fro
 **IMPORTANT UPDATE!**
 This application uses Watson's Personality Insights service which has been set on the road to become deprecated. From the official IBM Cloud: "IBM will begin sunsetting IBM Watson Personality Insights on 1 December 2020. For a period of one year from this date, you will still be able to use Personality Insights. However, as of 1 December 2021, the offering will no longer be available."
 
+**NOTE**
+Please note that this is just a DEMO/proof of concept to showcase a student project. It is NOT meant to be used or relied on by actual students looking for coop/internship opportunities. However, it is a first step towards a final and fully reliable solution.
+
 **OVERVIEW**
 
-COOBOT is a senior project developed by two software engineering students from KSA. Please note that this is just a DEMO/proof of concept. It is NOT meant to be used or relied on by actual students looking for coop/internship opportunities. However, it is a first step towards a final and fully reliable solution.   
+COOBOT is a senior project developed by two software engineering students from KSA.   
 
 COOBOT was developed using the following technologies: 
 - Framework: ASP.NET Core (+ ASP Boilerplate)
