@@ -1,6 +1,10 @@
 # COOBOT
 An ASP.NET web application which recommends students suitable Coop vacancies from LinkedIn based on analysis done on their resumes by IBM's AI Watson.
 
+
+**IMPORTANT UPDATE!**
+This application uses Watson's Personality Insights service which has been set on the road to become deprecated. From the official IBM Cloud: "IBM will begin sunsetting IBM Watson Personality Insights on 1 December 2020. For a period of one year from this date, you will still be able to use Personality Insights. However, as of 1 December 2021, the offering will no longer be available."
+
 **OVERVIEW**
 
 COOBOT is a senior project developed by two software engineering students from KSA. Please note that this is just a DEMO/proof of concept. It is NOT meant to be used or relied on by actual students looking for coop/internship opportunities. However, it is a first step towards a final and fully reliable solution.   
@@ -17,7 +21,7 @@ Languages
 - Typescript
 
 
-**CONCEPT*
+**CONCEPT**
 
 - About 200 student resumes served as dataset** to train a custom Watson NLU model to extract location, major, and highlight/infer interpersonal and technical skills.
 - About 300 coop/internship vacancies in KSA were scraped from LinkedIn***. This data includes: name of position, city, company, link to the vacancy on LinkedIn, description and date posted.
@@ -31,17 +35,17 @@ Languages
 
 **NOTE**
 
-Please consider, this is just the source code and very backbone of the application, which is hosted locally on our machines. If you would like to run and try it for yourself, you would have to go through the following steps: 
+Please consider, this is just the source code and very backbone of the application which must be hosted locally on Miscrosoft IIS in order to run, minus of course sensitive credentials such as Watson services' API keys. If you would like to run and try it for yourself, first create your own instances of the aformentioned Watson services and plug your own API keys into . Then go through the following steps: 
 
 To run the application, kindly follow the steps to host the application on Microsoft IIS (Internet Information Services): 
 
 1- If not already installed, enable IIS from Control Panel > Switch to Category View > Programs > Turn Windows Features ON or OFF > Locate IIS in the Windoes Feature dialog box and enable it. 
 
-2- Install IIS module called "URL Rewrite" from "https://www.iis.net/downloads/microsoft/url-rewrite". (please make sure to scroll down to Download URL Rewrite Module 2.1)
+2- Install IIS module called "URL Rewrite" from "https://www.iis.net/downloads/microsoft/url-rewrite". (please make sure to scroll down to Download URL Rewrite Module 2.1). (Since the application is single-page and runs React to generate html components on the fly with logical routing, this module is needed to force the server to always redirect to the only html page available instead of trying to look for inexistent pages)
 
 3- Download and install .NET Core 3.1 Microsoft IIS Hosting bundle from "https://dotnet.microsoft.com/download/dotnet-core/3.1" (can be located on the right side under ASP.NET Core Runtime 3.1.10, please make sure you download Hosting Bundle.)
 
-4- Install MS SQL Server Express from "https://www.microsoft.com/en-sa/sql-server/sql-server-downloads?SilentAuth=1&wa=wsignin1.0" as well as MS SQL Server Management Studio form "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15".
+4- Install MS SQL Server Express from "https://www.microsoft.com/en-sa/sql-server/sql-server-downloads?SilentAuth=1&wa=wsignin1.0" as well as MS SQL Server Management Studio from "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15".
 
 5- After establishing a connection to the server, please make note of your username and password, then create an empty database called "COOBOT". 
 
@@ -60,6 +64,19 @@ To run the application, kindly follow the steps to host the application on Micro
 12- Right click on each and select "convert to application".
 
 13- Finally, run the app by selecting "coobot" and choosing "Browse *:80 (HTTP) fomr the right side pane, or just type "localhost:/coobot/" as URL in your browser. (preferrably Chrome, but certainly not IE as the application uses modern javascript that does not run properly on IE)
+
+
+**SCREENSHOTS** 
+
+![Screenshot 2020-12-14 222220](https://user-images.githubusercontent.com/46668566/109413759-2c5e6e80-79c0-11eb-8dc4-a9c27144cd8e.png)
+![Screenshot 2020-12-14 222132](https://user-images.githubusercontent.com/46668566/109413761-31232280-79c0-11eb-9f40-a83093fa8f25.png)
+![Screenshot 2020-12-14 223252](https://user-images.githubusercontent.com/46668566/109413767-37190380-79c0-11eb-9d30-4c366e11af31.png)
+![Screenshot 2020-12-15 001254](https://user-images.githubusercontent.com/46668566/109413772-3bddb780-79c0-11eb-82b7-8af5d8ae4b17.png)
+![Screenshot 2020-12-14 224845](https://user-images.githubusercontent.com/46668566/109413782-40a26b80-79c0-11eb-8d29-93c885495466.png)
+![Screenshot 2020-12-14 224956](https://user-images.githubusercontent.com/46668566/109413786-48faa680-79c0-11eb-9fdb-f49f830860d1.png)
+![pi](https://user-images.githubusercontent.com/46668566/109413793-5152e180-79c0-11eb-88e6-fd2f8bce3589.png)
+![Screenshot 2020-12-14 225323](https://user-images.githubusercontent.com/46668566/109413798-5c0d7680-79c0-11eb-9e5b-cf32fff11990.png)
+![Screenshot 2020-12-14 225523](https://user-images.githubusercontent.com/46668566/109413800-60399400-79c0-11eb-8020-45b098df2ddc.png)
 
 
 
