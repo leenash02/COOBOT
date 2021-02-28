@@ -1,7 +1,7 @@
 # COOBOT
 An ASP.NET web application which recommends students suitable Coop vacancies from LinkedIn based on analysis done on their resumes by IBM's AI Watson.
 
-Overview
+**OVERVIEW
 
 COOBOT is a senior project developed by two software engineering students from KSA. Please note that this is just a DEMO/proof of concept. It is NOT meant to be used or relied on by actual students looking for coop/internship opportunities. However, it is a first step towards a final and fully reliable solution.   
 
@@ -17,9 +17,10 @@ Languages
 - Typescript
 
 
-Concept
-- About 200 student resumes served as dataset* to train a custom Watson NLU model to extract location, major, and highlight/infer interpersonal and technical skills.
-- About 300 coop/internship vacancies in KSA were scraped from LinkedIn**. This data includes: name of position, city, company, link to the vacancy on LinkedIn, description and date posted.
+**CONCEPT
+
+- About 200 student resumes served as dataset** to train a custom Watson NLU model to extract location, major, and highlight/infer interpersonal and technical skills.
+- About 300 coop/internship vacancies in KSA were scraped from LinkedIn***. This data includes: name of position, city, company, link to the vacancy on LinkedIn, description and date posted.
 - The data, in JSON format, was then uploaded to Watson Discovery's on-cloud corpus, and enriched with NLU analysis from a customized instance of Watson NLU, extracting key concepts and keywords such as required major, required skills set and location. The data was also run through Personality Analysis to obtain an idea about the needs and values represented in the coop/internship description. Both analysis will be later compared with the one done on the resumes. 
 - Student uploads their CV/resume and/or a cover letter to COOBOT, the letter is optional but including it will help Personality Insights give better analysis regarding student's personality, needs and values. 
 - The application extracts the text from said documents, then show it to the user for validation, as the process of extracting text (especially from PDF) is not optimal, and providing Watson with unsanitized data might pose a risk of obtaining inaccurate results/analysis. 
@@ -27,7 +28,8 @@ Concept
 - Finally, the application strings NLU results in a query format accepted by Watson Discovery, which returns the required coop/internship data based on the parameters provided. Each is tagged with a score representing Watson's confidence of how relevent the returned data is to the sent query.  
 - The returned response is then visualized in order of relevance, and students can see how much they match with each of the recommended opportunities via charts. 
 
-Note
+
+**NOTE
 
 Please consider, this is just the source code and very backbone of the application, which is hosted locally on our machines. If you would like to run and try it for yourself, you would have to go through the following steps: 
 
@@ -61,10 +63,10 @@ To run the application, kindly follow the steps to host the application on Micro
 
 
 
-RESOURCES
+**RESOURCES
 
-1. ** The Javascript scraper used: : https://github.com/spinlud/linkedin-jobs-scraper
-2. * The training dataset (student resumes) was obtained from: https://www.kaggle.com/maitrip/resumes
+1. ** The training dataset (student resumes) was obtained from: https://www.kaggle.com/maitrip/resumes
+2. *** The Javascript scraper used: : https://github.com/spinlud/linkedin-jobs-scraper
 
 
 
