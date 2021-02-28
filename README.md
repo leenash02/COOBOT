@@ -27,22 +27,35 @@ Concept
 - The returned response is then visualized in order of relevance, and students can see how much they match with each of the recommended opportunities via charts. 
 
 Note
+
 Please consider, this is just the source code and very backbone of the application, which is hosted locally on our machines. If you would like to run and try it for yourself, you would have to go through the following steps: 
 
 To run the application, kindly follow the steps to host the application on Microsoft IIS (Internet Information Services): 
 
 1- If not already installed, enable IIS from Control Panel > Switch to Category View > Programs > Turn Windows Features ON or OFF > Locate IIS in the Windoes Feature dialog box and enable it. 
+
 2- Install IIS module called "URL Rewrite" from "https://www.iis.net/downloads/microsoft/url-rewrite". (please make sure to scroll down to Download URL Rewrite Module 2.1)
+
 3- Download and install .NET Core 3.1 Microsoft IIS Hosting bundle from "https://dotnet.microsoft.com/download/dotnet-core/3.1" (can be located on the right side under ASP.NET Core Runtime 3.1.10, please make sure you download Hosting Bundle.)
+
 4- Install MS SQL Server Express from "https://www.microsoft.com/en-sa/sql-server/sql-server-downloads?SilentAuth=1&wa=wsignin1.0" as well as MS SQL Server Management Studio form "https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15".
+
 5- After establishing a connection to the server, please make note of your username and password, then create an empty database called "COOBOT". 
+
 6- From the folder "published" attached in this zip, navigate to "published" -> "migrations", locate an executable (.exe) file named "COOBOT.Migrator.exe" and run it. (command line will open asking you to confrim, just type "y" and enter) make sure are migrations are applied.
+
 7- In the folder "published", navigate to "published" -> "migrations", locate a file named "appsettings.json", open it and change "ConnectionStrings" such that it matches your own SQL server credentials. Do the same in the appsettings.json file in "published" -> "coobot-api" folder as well. 
+
 8- Open the file attached in this zip called "PopulateCoopPersonalityInsights.sql" in SQL Management Studio and execute the query. 
+
 9- After execution is successful, copy folders "coobot" and "coobot-api" from folder "published" into this directory "C:/inetpub/wwwroot"
+
 10- open IIS Manager, on the left pane, you will see "YourComputerName(YourComputerName\YourUserName)" expand it, then expand Sites, and then Default Web Site.
+
 11- In Default Web Site, you should be able to see the two folders you moved, "coobot-api" and "coobot".
+
 12- Right click on each and select "convert to application".
+
 13- Finally, run the app by selecting "coobot" and choosing "Browse *:80 (HTTP) fomr the right side pane, or just type "localhost:/coobot/" as URL in your browser. (preferrably Chrome, but certainly not IE as the application uses modern javascript that does not run properly on IE)
 
 
