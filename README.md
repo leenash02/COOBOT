@@ -62,8 +62,8 @@ To run the application, kindly follow the steps to host the application on Micro
 
 RESOURCES
 
-1. * Javascript scraper used: : https://github.com/spinlud/linkedin-jobs-scraper![image](https://user-images.githubusercontent.com/46668566/109413437-6fb7dd80-79be-11eb-8060-fc36b857a216.png)
+1. * Javascript scraper used: : https://github.com/spinlud/linkedin-jobs-scraper
 2. The training dataset (student resumes) was obtained from: https://www.kaggle.com/maitrip/resumes
-![image](https://user-images.githubusercontent.com/46668566/109413451-8b22e880-79be-11eb-860b-011c030d1c59.png)
+
 
 
