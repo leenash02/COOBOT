@@ -35,7 +35,7 @@ Languages
 
 **NOTE**
 
-Please consider, this is just part of the source code including the very backbone/core functionalities of the application minus of course sensitive credentials such as Watson services' API keys. What is provided in this repository is in no way operable as is, but just to give you an idea of what the code looks like. 
+Please consider, this is just part of the source code including the very backbone/core functionalities of the application minus of course sensitive credentials such as Watson services' API keys. What is provided in this repository is in no way operable as is, there are many other configuration files required to run this app on a local machine (hosted on IIS Express) which are not provided, it's just to give you an idea of what the core code looks like. 
 
 
 **SCREENSHOTS** 
