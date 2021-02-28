@@ -18,7 +18,8 @@ Languages
 
 
 Concept
-- About 300 coop/internship vacancies in KSA were scraped from LinkedIn*. This data includes: name of position, city, company, link to the vacancy on LinkedIn, description and date posted.
+- About 200 student resumes served as dataset* to train a custom Watson NLU model to extract location, major, and highlight/infer interpersonal and technical skills.
+- About 300 coop/internship vacancies in KSA were scraped from LinkedIn**. This data includes: name of position, city, company, link to the vacancy on LinkedIn, description and date posted.
 - The data, in JSON format, was then uploaded to Watson Discovery's on-cloud corpus, and enriched with NLU analysis from a customized instance of Watson NLU, extracting key concepts and keywords such as required major, required skills set and location. The data was also run through Personality Analysis to obtain an idea about the needs and values represented in the coop/internship description. Both analysis will be later compared with the one done on the resumes. 
 - Student uploads their CV/resume and/or a cover letter to COOBOT, the letter is optional but including it will help Personality Insights give better analysis regarding student's personality, needs and values. 
 - The application extracts the text from said documents, then show it to the user for validation, as the process of extracting text (especially from PDF) is not optimal, and providing Watson with unsanitized data might pose a risk of obtaining inaccurate results/analysis. 
@@ -62,8 +63,8 @@ To run the application, kindly follow the steps to host the application on Micro
 
 RESOURCES
 
-1. * Javascript scraper used: : https://github.com/spinlud/linkedin-jobs-scraper
-2. The training dataset (student resumes) was obtained from: https://www.kaggle.com/maitrip/resumes
+1. ** The Javascript scraper used: : https://github.com/spinlud/linkedin-jobs-scraper
+2. * The training dataset (student resumes) was obtained from: https://www.kaggle.com/maitrip/resumes
 
 
 
